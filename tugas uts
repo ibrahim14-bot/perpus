@@ -1,19 +1,4 @@
 // Program: Sistem Manajemen Perpustakaan Sederhana (OOP Java)
-
-public class Main {
-    public static void main(String[] args) {
-        Perpustakaan perpustakaan = new Perpustakaan(5);
-
-        BukuPelajaranIPA buku1 = new BukuPelajaranIPA("Ekonomi", "Sutarno", "978-979-040-394-9","IPS", "SMA");
-        BukuFiksi buku2 = new BukuFiksi("Jalan Pulang", "Jazuli Imam", "978-602-236-465-7", "Petualangan");
-
-        perpustakaan.tambahBuku(buku1);
-        perpustakaan.tambahBuku(buku2);
-
-        perpustakaan.tampilSemuaBuku();
-    }
-}
-
 // Class Induk Buku
 class Buku {
     protected String judul;
@@ -131,5 +116,18 @@ class Perpustakaan {
             daftarBuku[i].tampilInfo();
             System.out.println("----------------------");
         }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Perpustakaan perpustakaan = new Perpustakaan(5);
+
+        BukuPelajaranIPA buku1 = new BukuPelajaranIPA("Ekonomi", "Sutarno", "978-979-040-394-9","IPS", "SMA");
+        BukuFiksi buku2 = new BukuFiksi("Jalan Pulang", "Jazuli Imam", "978-602-236-465-7", "Petualangan");
+
+        perpustakaan.tambahBuku(buku1);
+        perpustakaan.tambahBuku(buku2);
+
+        perpustakaan.tampilSemuaBuku();
     }
 }
