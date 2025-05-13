@@ -49,8 +49,8 @@ class BukuPelajaran extends Buku {
     }
 }
 
-// Subclass 2 (Cucu Class): BukuPelajaranIPA
-class BukuPelajaranIPA extends BukuPelajaran {
+// Subclass 2 (Cucu Class): BukuPelajaranIPS
+class BukuPelajaranIPS extends BukuPelajaran {
     private String tingkat;
 
     public BukuPelajaranIPS(String judul, String penulis, String isbn, String mataPelajaran, String tingkat) {
